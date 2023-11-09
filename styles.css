@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'Friz Quadrata';
+    src: url(font/Friz\ Quadrata\ Regular.ttf);
+  }
+
+:root {
+    --fundo: #000000;
+    --branco: #fff;
+    --botao: #fa4454;
+    --input: #53212b;
+    --fonte-principal: 'Anton';
+    --fonte-secundaria: 'Friz Quadrata';
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 5rem;
+}
+
+.apresentacao-titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 60px;
+    color: var(--botao);
+}
+
+.apresentacao-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formulario-titulo {
+    font-size: 50px;
+}
+
+.formulario-input {
+    width: 90%; 
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--input); 
+    color: var(--branco); 
+}
+
+.formulario-botao {
+    width: 50%; 
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--botao); 
+    color: var(--branco); 
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-input:focus {
+    outline: none;
+}
+
+.formulario-botao:hover {
+    background-color: #5A78F0;
+}
+
+@media (max-width: 780px) {
+    .apresentacao-titulo {
+        font-size: 30px;
+    }
+
+    .formulario-titulo {
+        font-size: 30px;
+    }
+
+    .formulario-input {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .formulario-botao {
+        width: 60%;
+        font-size: 14px;
+    }
+}
+
+
+
